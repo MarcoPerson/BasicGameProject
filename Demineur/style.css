@@ -1,0 +1,258 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url("../Tetris/tetris.jpg");
+}
+header{
+	width: 100vw;
+	align-self: flex-start;
+}
+
+nav{
+    background-color: #198754;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    color: white;
+}
+
+.nav-logo{
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 10px 20px;
+}
+
+.nav-hamburger{
+    display: none;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    position: relative;
+}
+
+.nav-ul-li{
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.nav-ul-a{
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    padding: 10px 10px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.nav-ul-a:hover, #nav-ul-li-active{
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#nav-ul-li-games{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    float: left;
+    top: 60px;
+    left: 100px;
+    background-color: #198754;
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.nav-ul2 li{
+    display: block;
+    width: 8rem;
+    margin: 15px;
+    opacity: 0.5;
+    border-bottom: dashed;
+}
+.nav-ul2 a{
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+}
+
+.nav-ul2 li:hover{
+    opacity: 1;
+}
+
+#nav-ul-li-games.show{
+    display: block;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.winLoseBoard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 50px;
+    font-weight: bolder;
+    border: 8px solid black;
+    text-align: center;
+    border-radius: 10%;
+    background-color: #198754;
+    box-shadow: 0px 0px 1px 15px #EEE;
+    display: none;
+}
+
+.showLoseWinBoard{
+    display: block;
+}
+
+.close{
+    padding: 5px;
+    background-color: #b66316;
+    cursor: pointer;
+}
+
+.close:hover{
+    background-color: #914d0e;
+}
+
+.flagRestant{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.restart{
+    padding: 10px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #EEE;
+    cursor: pointer;
+}
+
+.restart:hover{
+    background-color: #0c3b25;
+}
+
+.grid{
+    height: 420px;
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(17, 102, 151);
+}
+
+.grid div{
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+}
+
+.valid{
+    background: url("./free.png");
+    background-size: contain;
+}
+
+.bomb{
+    background: url("./free.png");
+    background-size: contain;
+}
+
+.bomb2{
+    background: url("./bomb.jpg");
+    background-size: contain;
+}
+
+.flag{
+    background: url("./flags.png");
+    background-size: contain;
+}
+.checked{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: large;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .nav-ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-hamburger{
+        display: block;
+    }
+    .nav-ul.show{
+        display: flex;
+        transition: 0.3s;
+    }
+    #nav-ul-li-games{
+        top: 110px;
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+}

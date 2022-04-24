@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mastermind</title>
+        <link rel="stylesheet" href="MastermindGame.css" type="text/css">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <span class="nav-logo">MAVGRSBZ</span>
+                <span class="nav-hamburger">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <ul class="nav-ul">
+                    <li class="nav-ul-li"><a href="../index.html" class="nav-ul-a">Home</a></li>
+                    <li class="nav-ul-li" id="li-menu">
+                        <a href="#" class="nav-ul-a" id="nav-ul-li-active">
+                            Games 
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                    </li>
+                    <li class="nav-ul-li" id="nav-ul-li-games">
+                        <ul class="nav-ul2">
+                            <li><a href="./index.html">MasterMind</a></li>
+                            <li><a href="../Demineur/index.html">Demineur</a></li>
+                            <li><a href="../Tetris/index.html">Tetris</a></li>
+                            <li><a href="../Catfish/Home/indexhome.html">CatFish</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-ul-li"><a href="../index.html#mastermind" class="nav-ul-a">Instructions</a></li>
+                    <li class="nav-ul-li"><a href="../index.html#authors" class="nav-ul-a">Authors</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="Fenetre">
+            <div class="PlateauJeu">
+                <div class="Interface"></div>
+                <div class="Indices"></div>
+            </div>
+            <div class="Utilisateur">
+                <div class="Code">
+                    <div class="Couleurcode" id="Couleur1"></div>
+                    <div class="Couleurcode" id="Couleur2"></div>
+                    <div class="Couleurcode" id="Couleur3"></div>
+                    <div class="Couleurcode" id="Couleur4"></div>
+                </div>
+                <div class="Palette">
+                    <div class="Couleur" id="Red"></div>
+                    <div class="Couleur" id="Blue"></div>
+                    <div class="Couleur" id="Green"></div>
+                    <div class="Couleur" id="Yellow"></div>
+                    <div class="Couleur" id="Violet"></div>
+                    <div class="Couleur" id="Orange"></div>
+                </div>
+                <div class="Couleurselectionne"></div>
+                <div class="Valider">Valider</div>
+            </div>
+        </div>
+
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Mastermind.js"></script>
+    </body>
+
+</html>

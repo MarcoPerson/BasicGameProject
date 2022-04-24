@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" href="index.css" type="text/css">
+	<script type="text/javascript" src="index.js"></script>
+	<title>CatFish Running</title>
+  </head>
+  <body>
+		<div class="grid-container">
+			
+		  <div class="grid-item"  id="Player1">
+			<div class = "titlescore" >Player 1 <br>
+			Score:</div>
+			<div id="Score1">0</div>
+		  </div>
+		  
+		  <div id="chrono" class="grid-item">
+			<div>TIMER</div>
+			<div id="temps"></div>
+		</div>
+		  
+		   <div class="grid-item" id="Player2">
+			<div class = "titlescore">Player 2 <br>
+			Score :</div>
+			<div id="Score2">0</div>
+		  </div>
+		  
+		  <div class="grid-item">4</div>
+		  
+		  <div class="grid-item">
+			<p id="rand" style="font-size:1px" ></p>
+			<img id="myImage" src="../Image/plateau.png">
+
+		  </div>
+		
+		  <div class="grid-item">6</div>
+		  
+		   <div class="grid-item" id="Player3">
+			<div class = "titlescore">Player 3 <br> 
+			Score :</div>
+			<div id="Score3">0</div>
+		  </div>
+		  
+		  <div id="para" class="grid-item">
+			<p id="state">READY ?</p>
+			<div>NUMBER OF PLAYERS</div>
+			<div id=nbPlayers></div>
+		</div>
+		  
+		   <div class="grid-item" id="Player4">
+			<div class = "titlescore">Player 4 <br>
+			Score :</div>
+			<div id="Score4">0</div>
+		  </div>
+		  
+		</div>
+
+  </body>
+  
+  <script>
+
+	function Init_Time(){
+		const timerElement = document.getElementById("temps");
+		timerElement.innerText = recupererValeurs(window.location, "time");
+		
+		const nbPlayerElement = document.getElementById("nbPlayers");
+		nbPlayerElement.innerText = recupererValeurs(window.location, "nb_players");
+	}
+	Init_Time();
+	var x = setInterval(Decrementer, 1000);
+</script>
+
+</html>

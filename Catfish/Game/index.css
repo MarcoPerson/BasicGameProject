@@ -1,0 +1,47 @@
+body{
+	background-image : url("../Image/Background.png");
+}
+
+.grid-container{
+	display : grid;
+	justify-content : space-evenly;
+	grid-template-columns : 20% auto 20%;
+	grid-template-rows : 20% auto 20%;
+	height : 100%;
+
+}
+
+.grid-item{
+	text-align : center;
+	padding : 0;
+	margin : 0;
+
+}
+
+#Player1 , #Player2 , #Player3 , #Player4 {
+	background-color : AntiqueWhite;
+	border-radius : 30px;
+	font-size : 40px;
+}
+
+.titlescore {
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+}
+
+#chrono {
+	background-color : AntiqueWhite;
+	font-size :75px;
+	border-radius : 50%;
+
+}
+
+#para {
+	background-color : AntiqueWhite;
+	font-size :30px;
+	border-radius : 50%;
+}
+
+#myImage {
+	height : 550px;
+}

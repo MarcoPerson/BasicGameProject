@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- fichier header commun a tout le site-->
+    <link rel="stylesheet" href="indexhome.css" type="text/css">
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	<script src="./app.js"></script>
+    <script type="text/javascript" src="../Game/index.js"></script>
+	<title>CatFish</title>
+  </head>
+  <body>
+	<header>
+        <nav>
+            <span class="nav-logo">MAVGRSBZ</span>
+            <span class="nav-hamburger">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul class="nav-ul">
+                <li class="nav-ul-li"><a href="../../index.html" class="nav-ul-a">Home</a></li>
+                <li class="nav-ul-li" id="li-menu">
+                    <a href="#" class="nav-ul-a" id="nav-ul-li-active">
+                        Games 
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                </li>
+                <li class="nav-ul-li" id="nav-ul-li-games">
+                    <ul class="nav-ul2">
+                        <li><a href="../../Mastermind/index.html">MasterMind</a></li>
+                        <li><a href="../../Demineur/index.html">Demineur</a></li>
+                        <li><a href="../../Tetris/index.html">Tetris</a></li>
+						<li><a href="./indexhome.html">CatFish</a></li>
+                    </ul>
+                </li>
+                <li class="nav-ul-li"><a href="../../index.html#catfish" class="nav-ul-a">Instructions</a></li>
+                <li class="nav-ul-li"><a href="../../index.html#authors" class="nav-ul-a">Authors</a></li>
+            </ul>
+        </nav>
+    </header>
+	  
+    <h1 id="Game">Catfish<h1>
+    
+    <form id="myform" method="GET" action="../Game/index.html">
+		
+		<p id="question">How many player is there ?</p>
+		<br>
+		<div class="Option">
+			
+		  <input type="radio" name="nb_players" value="2" id="2p" checked> 
+		  <label for="2p">2 Players</label>
+		  
+		  <input type="radio" name="nb_players" value="3" id="3p"> 
+		  <label for="3p">3 Players</label>
+		  
+		  <input type="radio" name="nb_players" value="4" id="4p"> 
+		  <label for="4p">4 Players</label>
+		  
+		</div>  
+		<br>
+		<p id="question">How much time do you want to play ?</p>
+		<br>
+		<div class="Option">
+
+		  <input type="radio" name="time" value="15" id="15 seconds" checked> 
+		  <label for="15 seconds">15 seconds</label>
+		  
+		  <input type="radio" name="time" value="30" id="30 seconds"> 
+		  <label for="30 seconds">30 seconds</label>
+		  
+		  <input type="radio" name="time" value="60" id="60 seconds"> 
+		  <label for="60 seconds">60 seconds</label>
+		  
+		</div>  
+		
+		
+		<div class="container">
+			<img id="paw" src="../Image/paw.png">
+			<button class="PLAY" type="submit" value="Submit" onmouseover="PawChangeGrey()" onmouseout="PawChangeBlack()"><strong>PLAY</strong></button>
+		</div>
+    </form>
+    
+    <div >
+		<h2 class="rules ">RULES</h2>
+		<br>
+		<p id="descRules">Be the first one to press the button when a fish appears and you will get a point. <br>
+		Avoid pressing your button on the keyboard when a fish skeleton appears otherwise you will lose a point. </p>
+		
+	</div>
+	<br>
+	
+	<div class="Paw" >
+		<div ><p id="pp">Player 1</p>
+			<img id="weapon" src="../Image/keyA.png">
+		</div>
+		<div ><p id="pp">Player 2</p>
+			<img id="weapon" src="../Image/keyP.png">
+		</div>
+		<div ><p id="pp">Player 3</p>
+			<img id="weapon" src="../Image/keyW.png">
+		</div>
+		<div > <p id="pp">Player 4</p>
+			<img id="weapon" src="../Image/keyN.png">
+		</div>
+	</div>
+		
+
+  </body>
+</html>
+
+

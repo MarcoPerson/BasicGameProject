@@ -1,0 +1,91 @@
+body{
+	background-image : url("../Image/Background.png");
+}
+
+
+.flex-container{
+	display : flex;
+	justify-content : space-evenly;
+	grid-template-columns : 25% 25% 25% 25%;
+	
+}
+
+.flex-item{
+	background-color : AntiqueWhite;
+	width : 20%;
+	font-size : 40px;
+	text-align : center;
+	border : 5px solid black;
+}
+
+#res {
+	border : 5px solid black;
+	background-color : AntiqueWhite;
+}
+
+.re{
+	text-align : center;
+	font-size : 90px;
+}
+
+.btn{
+	display : flex;
+	justify-content : space-evenly;
+}
+
+h1 {
+	text-align : center;
+	font-size : 90px;
+	border : 5px solid black;
+	background-color : AntiqueWhite;
+}
+
+#pawmenu, #pawrestart {
+	width : 350px;
+}
+
+.btn div{
+  position: relative;
+}
+
+.btn .button1 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  background-color : transparent; 
+  padding: 10px;
+  color: white;
+  color: white;
+}
+.btn .button1:hover {
+	background-color : transparent ;
+  color: black;
+}
+
+.btn .button2 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  background-color : transparent; 
+  padding: 10px;
+  color: white;
+  color: white;
+}
+.btn .button2:hover {
+	background-color : transparent ;
+  color: black;
+}

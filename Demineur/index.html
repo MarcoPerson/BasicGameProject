@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Demineur</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="nav-logo">MAVGRSBZ</span>
+            <span class="nav-hamburger">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul class="nav-ul">
+                <li class="nav-ul-li"><a href="../index.html" class="nav-ul-a">Home</a></li>
+                <li class="nav-ul-li" id="li-menu">
+                    <a href="#" class="nav-ul-a" id="nav-ul-li-active">
+                        Games 
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                </li>
+                <li class="nav-ul-li" id="nav-ul-li-games">
+                    <ul class="nav-ul2">
+                        <li><a href="../Mastermind/index.html">MasterMind</a></li>
+                        <li><a href="./index.html">Demineur</a></li>
+                        <li><a href="../Tetris/index.html">Tetris</a></li>
+                        <li><a href="../Catfish/Home/indexhome.html">CatFish</a></li>
+                    </ul>
+                </li>
+                <li class="nav-ul-li"><a href="../index.html#demineur" class="nav-ul-a">Instructions</a></li>
+                <li class="nav-ul-li"><a href="../index.html#authors" class="nav-ul-a">Authors</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <button class="restart">Restart</button>
+        <div class="winLoseBoard">
+            <span></span>
+            <button class="close">Close</button>
+        </div>
+        <div class="flagRestant">Remaining Flags : <span>20</span></div>
+        <div class="grid">
+        
+        </div>
+    </section>
+
+<script src="app.js"></script>
+</body>
+</html>

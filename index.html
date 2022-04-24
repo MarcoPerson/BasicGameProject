@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Merveilles AGBETI-MESSAN, Valentin Guittard, Ralaimady Seta, Brandon Zhong">
+    <meta name="description" content="Ce site a été créer dans le cadre du projet de programmation
+     web de l'INSA. Il regroupe une reproduction des
+      jeux tels que MasterMind, Demineur et Tetris">
+    <meta property="og:image" content="url('./authors.png')">
+    <meta property="og:description" content="Ce site a été créer dans le cadre du projet de 
+    programmation web de l'INSA. Il regroupe une reproduction
+     des jeux tels que MasterMind, Demineur et Tetris">
+    <meta property="og:title" content="Games by MAVGRSBZ">
+    <link rel="shortcut icon" href="authorsico.png" type="image/x-icon">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>MAVGRSBZ</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="nav-logo">MAVGRSBZ</span>
+            <span class="nav-hamburger">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul class="nav-ul">
+                <li class="nav-ul-li"><a href="#" class="nav-ul-a" id="nav-ul-li-active">Home</a></li>
+                <li class="nav-ul-li" id="li-menu">
+                    <a href="#" class="nav-ul-a">
+                        Games 
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                </li>
+                <li class="nav-ul-li" id="nav-ul-li-games">
+                    <ul class="nav-ul2">
+                        <li><a href="./Mastermind/index.html">MasterMind</a></li>
+                        <li><a href="./Demineur/index.html">Demineur</a></li>
+                        <li><a href="./Tetris/index.html">Tetris</a></li>
+                        <li><a href="./Catfish/Home/indexhome.html">CatFish</a></li>
+                    </ul>
+                </li>
+                <li class="nav-ul-li"><a href="#instructions" class="nav-ul-a">Instructions</a></li>
+                <li class="nav-ul-li"><a href="#authors" class="nav-ul-a">Authors</a></li>
+            </ul>
+        </nav>
+        <div class="carousel">
+            <div class="carousel-item carousel-item-active">
+                <img src="https://images.pexels.com/photos/209728/pexels-photo-209728.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="MasterMind Image">
+                <div class="carousel-text">
+                    <p>MasterMind Game</p>
+                    <button class="play"><a href="./Mastermind/index.html">Play</a></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="MineSweeper Image">
+                <div class="carousel-text">
+                    <p>Demineur Game</p>
+                    <button class="play"><a href="./Demineur/index.html">Play</a></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Tetris Image">
+                <div class="carousel-text">
+                    <p>Tetris Game</p>
+                    <button class="play"><a href="./Tetris/index.html">Play</a></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpaperaccess.com/full/142739.jpg" alt="CatFish Image">
+                <div class="carousel-text">
+                    <p>CatFish Game</p>
+                    <button class="play"><a href="./Catfish/Home/indexhome.html">Play</a></button>
+                </div>
+            </div>
+            <div class="carousel-actions">
+                <button id="previous-button" aria-label="PreviousSlide"><</button>
+                <button id="next-button" aria-label="NextSlide">></button>
+            </div>
+        </div>
+    </header>
+    <section id="instructions" class="instructions">
+        <h1>Instructions</h1>
+        <article id="mastermind">
+            <h2>MasterMind</h2>
+            <h3>Gameplay and rules</h3>
+                The game is played <br>
+                a decoding board, with a shield at one end covering a row of four large holes, and twelve (or ten, or eight, or six) additional rows containing four large holes next to a set of four small holes;<br>
+                code pegs of six different colors (or more; see Variations below), with round heads, which will be placed in the large holes on the board; and
+                key pegs, some colored black, some white, which are flat-headed and smaller than the code pegs; they will be placed in the small holes on the board. <br>
+                The two players decide in advance how many games they will play, which must be an even number. One player becomes the codemaker, the other the codebreaker. The codemaker chooses a pattern of four code pegs. Duplicates and blanks are allowed depending on player choice, so the player could even choose four code pegs of the same color or four blanks. In the instance that blanks are not elected to be a part of the game, the codebreaker may not use blanks in order to establish the final code. The chosen pattern is placed in the four holes covered by the shield, visible to the codemaker but not to the codebreaker. <br>
+                The codebreaker tries to guess the pattern, in both order and color, within eight to twelve turns. Each guess is made by placing a row of code pegs on the decoding board. Once placed, the codemaker provides feedback by placing from zero to four key pegs in the small holes of the row with the guess. A colored or black key peg is placed for each code peg from the guess which is correct in both color and position. A white key peg indicates the existence of a correct color code peg placed in the wrong position. <br>
+                Screenshot of software implementation (ColorCode) illustrating the example. <br>
+                If there are duplicate colours in the guess, they cannot all be awarded a key peg unless they correspond to the same number of duplicate colours in the hidden code. For example, if the hidden code is red-red-blue-blue and the player guesses red-red-red-blue, the codemaker will award two colored key pegs for the two correct reds, nothing for the third red as there is not a third red in the code, and a colored key peg for the blue. No indication is given of the fact that the code also includes a second blue. <br>
+                Once feedback is provided, another guess is made; guesses and feedback continue to alternate until either the codebreaker guesses correctly, or all rows of the decoding boards are full. <br>
+                Traditionally, players can only earn points when playing as the codemaker. The codemaker gets one point for each guess the codebreaker makes. An extra point is earned by the codemaker if the codebreaker is unable to guess the exact pattern within the given number of turns. (An alternative is to score based on the number of key pegs placed.) The winner is the one who has the most points after the agreed-upon number of games are played. <br>
+        </article><hr>
+        <article id="demineur">
+            <h2>Demineur</h2>
+            <h3>Rules</h3>
+            Demineur Rules : <br>
+                The purpose of the different games of the online Minesweeper is simple. You have to discover all the free squares without exploding the mines in the grid. <br>
+                To uncover a square, left-click (normal click) on one of the squares on the grid. <br>
+                By clicking on a box, you can see the number of mines in the neighbouring boxes (maximum 8) that surround it to the left or right, up or down, or diagonally. Be careful, some squares hide a bomb and other squares do not. <br>
+                You can use the numbers to free up other boxes. In this example, the "2" at the bottom left is a guess that there are two nearby mines surrounding it. <br>
+                Once the flag is placed, potentially (or surely) hiding a bomb, you can guess that there are no mines in the marked places, since the "1's" at the bottom right already have a mine on the neighbouring squares. You can therefore left-click (normal click) on these two squares. <br>
+                With the different games of the online de-miner (best known Windows), you can choose between three standard playgrounds with different levels of difficulty. <br>
+                -Beginner : 56 fields, 10 mines. <br>
+                -Intermediate : 256 fields, 40 mines. <br>
+                -Expert (most difficult) : 496 fields, 99 mines. <br>
+        </article><hr>
+        <article id="tetris">
+            <h2>Tetris</h2>
+            <h3>Goals</h3>
+                The aim in Tetris is simple; you bring down blocks from the top of the screen. You can move the blocks around, either left to right and/or you can rotate them. The blocks fall at a certain rate, but you can make them fall faster if you’re sure of your positioning. Your objective is to get all the blocks to fill all the empty space in a line at the bottom of the screen; whenever you do this, you’ll find that the blocks vanish and you get awarded some points. <br>
+                A goal gives us a reason to play the game. Tetris offers an incredibly simple reason to play—pitting your wits against the computerized block dropper in order to last as long as you can.  
+            <h3>Rules</h3>
+                Tetris has very simple rules: you can only move the pieces in specific ways; your game is over if your pieces reach the top of the screen; and you can only remove pieces from the screen by filling all the blank space in a line. <br>
+                Rules give much needed structure to our play. A completely random environment offers no clue as to how to play and would be incredibly frustrating. How fortunate it is, then, that Tetris’s three rules are what shape it into such an award-winning game. <br>
+        </article><hr>
+        <article id="catfish">
+            <h2>CatFish</h2>
+            <h3>Goals</h3>
+                Be the first one to press the button when a fish appears and you will get a point. <br>
+                Avoid pressing your button on the keyboard when a fish skeleton appears otherwise you will lose a point. 
+        </article><hr>
+    </section>
+    <div id="authors" class="authors">
+        <div class="grid">
+            <div class="grid-item">
+                <div class="card">
+                    <img src="./merveilles.jpg" alt="Photo de Merveilles" class="card-img">
+                    <div class="card-content">
+                        <h1 class="card-header">Merveilles Agbeti-Messan</h1>
+                        <p class="card-text">Étudiant en 3A Informatique à Institut national des Sciences appliquées de Toulouse</p>
+                        <button class="card-btn"><a href="https://www.linkedin.com/in/merveilles-agbeti-messan-3bb03b1ba/" class="btn btn-primary">See Profile</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img src="./valentin.jpg" alt="" class="card-img">
+                    <div class="card-content">
+                        <h1 class="card-header">Valentin Guittard</h1>
+                        <p class="card-text">Étudiant en 3A Informatique à Institut national des Sciences appliquées de Toulouse</p>
+                        <button class="card-btn">
+                            <a href="#" class="btn btn-primary">See Profile</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img src="./mady.jpg" alt="Photo de Mady" class="card-img">
+                    <div class="card-content">
+                        <h1 class="card-header">Ralaimady Seta</h1>
+                        <p class="card-text">Étudiant en 3A Informatique à Institut national des Sciences appliquées de Toulouse</p>
+                        <button class="card-btn"><a href="https://fr.linkedin.com/in/ralaimady-seta-ab4425205" class="btn btn-primary">See Profile</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img src="./brandon.jpg" alt="Photo de Brandon" class="card-img">
+                    <div class="card-content">
+                        <h1 class="card-header">Brandon Zhong</h1>
+                        <p class="card-text">Étudiant en 3A Informatique à Institut national des Sciences appliquées de Toulouse</p>
+                        <button class="card-btn"><a href="https://fr.linkedin.com/in/brandon-zhong-47179a199/fr?trk=people-guest_people_search-card" class="btn btn-primary">See Profile</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

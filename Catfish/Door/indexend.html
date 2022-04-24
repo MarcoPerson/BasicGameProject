@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html >
+
+<head>
+	<script type="text/javascript" src="indexend.js"></script>
+	<link rel="stylesheet" href="indexend.css" type="text/css">
+	<title>CatFish End</title>
+	
+</head>
+
+<body>
+	<h1>RESULTS</h1>
+
+	<div class="flex-container">
+		
+		 <div class="flex-item">
+			 <div><b><u>Player 1:</u></b></div>
+			<div id="scp1"></div>
+		</div>
+		
+		 <div class="flex-item">
+			 <div><b><u>Player 2:</u></b></div>
+			<div id="scp2"></div>
+		</div>
+		
+		 <div class="flex-item">
+			 <div><b><u>Player 3:</u></b></div>
+			<div id="scp3"></div>
+		</div>
+		
+		 <div class="flex-item">
+			 <div><b><u>Player 4:</u></b></div>
+			<div id="scp4"></div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div id="res">
+		<div class="re" id="announ"></div>
+		<div class="re" id="winner"></div>
+	</div>
+	
+	<div class="btn">
+		<div>
+			<img id="pawrestart" src="../Image/paw.png">
+			<button class="button1" onclick="window.location.replace('../Home/indexhome.html')"  onmouseover="PawChangeGrey(1)" onmouseout="PawChangeBlack(1)">Restart</button>
+		</div>
+		<div>
+			<img id="pawmenu" src="../Image/paw.png">
+			<button class="button2" onclick="window.location.replace('../../index.html')" onmouseover="PawChangeGrey(0)" onmouseout="PawChangeBlack(0)">Main Menu</button>
+		</div>
+	</div>
+</body>
+
+<script>
+	
+	var Score1 = localStorage.getItem("sc1");
+	var Score2 = localStorage.getItem("sc2");
+	var Score3 = localStorage.getItem("sc3");
+	var Score4 = localStorage.getItem("sc4");
+	
+	document.getElementById("scp1").innerText=Score1;
+	document.getElementById("scp2").innerText=Score2;
+	document.getElementById("scp3").innerText=Score3;
+	document.getElementById("scp4").innerText=Score4;
+	
+	TheWinner();
+
+	</script>
+
+</html>
